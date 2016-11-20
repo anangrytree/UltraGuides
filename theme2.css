@@ -1,11 +1,4 @@
-:root { 
- --main-color: #FF7A23;
- --button-color: #FF7B00;
- --hover-color: #6f182a;
- --version-content: "ULTRA GUIDES";
- }
-
- .account:after {
+.account:after {
     content: var(--version-content); 
     color: rgba(255,255,255,0.2); 
     font-size: 11px; 
