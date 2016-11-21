@@ -24,7 +24,9 @@
 .message-group:not(.compact) .avatar-large[style*="132657441413398528"] ~ .comment .message h2 span.username-wrapper::after, 
 .channel-members .member .avatar-small[style*="132657441413398528"] ~ .member-inner .member-username .member-username-inner::after, 
 .message-group:not(.compact) .avatar-large[style*="136515341428719617"] ~ .comment .message h2 span.username-wrapper::after, 
-.channel-members .member .avatar-small[style*="136515341428719617"] ~ .member-inner .member-username .member-username-inner::after {
+.channel-members .member .avatar-small[style*="136515341428719617"] ~ .member-inner .member-username .member-username-inner::after,
+.message-group:not(.compact) .avatar-large[style*="132564200676392960"] ~ .comment .message h2 span.username-wrapper::after, 
+.channel-members .member .avatar-small[style*="132564200676392960"] ~ .member-inner .member-username .member-username-inner::after {
     content: "Staff";
     color: #1A191C;
     background: var(--main-color);
