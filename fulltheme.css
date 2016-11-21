@@ -405,6 +405,7 @@ textarea {
     border-bottom: 1px solid #19191B !important;
     box-shadow: none !important;
     min-height: 57px !important;
+    max-height: 57px !important;
     webkit-border-radius: 0px !important;
     border-radius: 0px !important;
 
