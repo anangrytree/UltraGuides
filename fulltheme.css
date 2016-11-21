@@ -1,17 +1,15 @@
 //META{"name":"Ultra Discord","description":"The official Ultra Guides theme for Better Discord.","author":"Seth","version":"0.1"}*//
-/*
-.account:after {
-    content: var(--version-content); 
-    color: rgba(255,255,255,0.2); 
+
+div.settings-actions:after {
+    content: "UG theme Designed By: Josh, Created By: Seth"; 
+    color: rgba(0,0,0,0.5); 
     font-size: 11px; 
     font-weight: bold; 
     position: absolute; 
-    bottom: 0; 
-    left: 149px; 
-    right: 0; 
+    top: 560px;
+    left: 200px; 
     opacity: 1;
 }
-*/
 .channel-members .avatar-small .status {
     border-color:rgba(0,0,0,0.7) !important;
 }
@@ -72,27 +70,31 @@ div.avatar-large, div.avatar-small {
     left: -14px!important;
     top: -2px!important;
     height: 8px !important;
-    border: 2px solid #19191b !important;
     margin: 22px 0px 0px 14px;
 }
 
 .status.status-typing.status-online {
+	border: 2px solid #19191b !important;
     background: #43b581 !important;
     transition: .3s all ease-in-out;
 }
 .status.status-typing.status-idle {
+	border: 2px solid #19191b !important;
     background: #faa61a !important;
     transition: .3s all ease-in-out;
 }
 .status.status-typing.status-dnd {
+	border: 2px solid #19191b !important;
     background: #f04747 !important;
     transition: .3s all linear;
 }
 .status.status-typing.status-invisible {
+	border: 2px solid #19191b !important;
     background: #747f8d !important;
     transition: .3s all linear;
 }
 .status.status-typing.status-offline {
+	border: 2px solid #19191b !important;
     background: #282829 !important;
     transition: .3s all linear;
 }
