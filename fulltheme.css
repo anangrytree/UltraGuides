@@ -138,7 +138,7 @@ div.avatar-large, div.avatar-small {
 }
 
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
-    border: 3px solid rgb(40, 43, 48) !important;
+    border: 3px solid rgb(44, 46, 51) !important;
     background-color: #24272B !important;
 }
 
@@ -187,21 +187,20 @@ button.btn:hover {
 }
 
 #voice-connection .btn {
-    background: #282B30;
+    background: #2C2E33;
     box-shadow:none !important;
     border: 1px solid transparent !important;
 }
 .guild-channels, .channel-members, .private-channels .scroller, #friends, #friends .friends-table-header, 
-#friends .scroller-wrap .scroller.friends-table-body {
-    background: #282B30 !important;
+#friends .scroller-wrap .scroller.friends-table-body, .messages-wrapper, .account, .flex-spacer.flex-vertical, 
+.typing, #voice-connection {
+    background: #2C2E33 !important;
 }
 
 .links,
 .chat,
-.typing,
 .content,
-.private-channels,
-.messages-wrapper {
+.private-channels, {
     background: transparent !important;
 }
 #voice-connection-popout hr {
