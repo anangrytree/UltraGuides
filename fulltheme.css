@@ -381,3 +381,7 @@ a, .divider-red, .divider.divider-red span {
 .active .friends-icon {
     opacity: 1
 }
+
+.inline {
+	background: #1E2124 !important;
+}
