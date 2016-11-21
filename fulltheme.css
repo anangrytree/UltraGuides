@@ -1,3 +1,5 @@
+//META{"name":"Ultra Discord","description":"The official Ultra Guides theme for Better Discord.","author":"Seth","version":"0.1"}*//
+/*
 .account:after {
     content: var(--version-content); 
     color: rgba(255,255,255,0.2); 
@@ -9,7 +11,7 @@
     right: 0; 
     opacity: 1;
 }
-
+*/
 .channel-members .avatar-small .status {
     border-color:rgba(0,0,0,0.7) !important;
 }
@@ -216,14 +218,26 @@ div.avatar-small {
     background-color: #24272B !important;
 }
 
+.account {
+	height: 55px;
+}
+
 .account .btn {
     background:transparent;
     box-shadow:none !important;
 }
 
 #voice-connection .btn {
-    background:#19191b;
+    background: #19191b;
     box-shadow:none !important;
+}
+
+#voice-connection .btn:hover {
+	background: #151517 !important;
+}
+
+#voice-connection .btn-group {
+	border: 1px solid transparent;
 }
 
 .account .btn-settings:after {
@@ -242,17 +256,19 @@ button.btn:hover {
 
 #voice-connection {
     z-index:9;
-    border-top:none !important;
+    border-top: 1px solid #1c1e22 !important;
     /*width:285px;
     margin-left:-83px;*/
-    padding:15px 20px 15px 18px !important;
+    padding: 5px 10px 5px 15px !important;
 }
 
 #voice-connection .btn {
     background: #282B30;
     box-shadow:none !important;
+    border: 1px solid transparent !important;
 }
-.guild-channels, .channel-members {
+.guild-channels, .channel-members, .private-channels .scroller, #friends, #friends .friends-table-header, 
+#friends .scroller-wrap .scroller.friends-table-body {
     background: #282B30 !important;
 }
 
@@ -261,7 +277,6 @@ button.btn:hover {
 .typing,
 .content,
 .private-channels,
-.divider-red span,
 .messages-wrapper {
     background: transparent !important;
 }
@@ -318,8 +333,9 @@ button.btn:hover {
     background-color: #121213;
 }
 
-.guild-channels .channel-text.selected {
-    background: #202226;
+.guild-channels .channel-text.selected, .guild-channels .channel-text:hover, .channel.private a:hover, .channel.private.selected, 
+.channel.btn-friends:hover, .channel.btn-friends.selected, .search-result:hover, .search-result.selected {
+    background: #202226 !important;
 }
 
 .guilds-wrapper .guilds .guild.selected:before {
@@ -327,16 +343,16 @@ button.btn:hover {
 }
 .guilds-wrapper .guilds .guild.unread:before {
     background: var(--main-color);
+    opacity: .5;
 }
 .guild-channels .channel-text.selected:before {
     border-left: 3px solid var(--main-color);
 }
 .guild-channels .channel-text.unread:not(.selected):not(.channel-muted):before {
     background: var(--main-color);
+    opacity: .5;
 }
-.guild-channels .channel-text:hover {
-    background: #202226;
-}
+
 .guild-channels .channel-text:hover.channel-muted:before, .guild-channels .channel-text:hover:not(.unread):before {
     border-left: 3px solid var(--main-color);
 }
@@ -380,16 +396,34 @@ textarea {
     background-color: #131315;
     color: #e4e4e4;
 }
-.title-wrap, .guild-header header, .guilds-wrapper .scroller-wrap {
-    background-color: #26282C !important;
+.guilds-wrapper .scroller-wrap {
+	background-color: #1E2124 !important;
 }
 
-a[draggable="false"] {
+.title-wrap, .guild-header header, .search-bar, .friends-header {
+    background-color: #26282C !important;
+    border-bottom: 1px solid #19191B !important;
+    box-shadow: none !important;
+    min-height: 57px !important;
+    webkit-border-radius: 0px !important;
+    border-radius: 0px !important;
+
+}
+
+a[draggable="false"], a[href*="/channels/@me"], a.channel-name.channel-private, a.voice-connection-channel {
     color: #E5E5E5 !important;
 }
 
-a {
+a, .divider-red, .divider.divider-red span {
     color: var(--main-color) !important;
+}
+
+.chat .new-messages-bar {
+    background-color:var(--main-color);
+}
+
+.chat .new-messages-bar:hover {
+    background-color:var(--main-color);
 }
 
 .channel-members .member:hover {
@@ -406,4 +440,19 @@ a {
 
 .theme-dark .channel-members .member.popout-open, .theme-dark .channel-members .member:hover {
     background: rgba(32,34,38,.5); !important;
+}
+
+.guilds-wrapper .guilds .friends-icon {
+    background-color: transparent
+}
+
+.friends-icon {
+    background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_question_answer_white_24px.svg)!important;
+    opacity: 0.8;
+    margin-top: 4px;
+    background-size: 50%!important
+}
+
+.active .friends-icon {
+    opacity: 1
 }
