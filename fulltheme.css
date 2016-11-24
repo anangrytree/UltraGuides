@@ -6,7 +6,7 @@ div.settings-actions:after {
     font-size: 11px; 
     font-weight: bold; 
     position: absolute; 
-    top: 560px;
+    top: 590px;
     left: 200px; 
     opacity: 1;
 }
@@ -138,7 +138,7 @@ div.avatar-large, div.avatar-small {
 }
 
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
-    border: 3px solid rgb(44, 46, 51) !important;
+    border: 3px solid transparent !important;
     background-color: #24272B !important;
 }
 
@@ -286,8 +286,8 @@ button.btn:hover {
     margin: 6px 0 17px;
 }
 .channel-textarea-inner {
-    border: 1px solid #1E2124;
-    background: #1E2124 !important;
+    border: 0px solid #222529;
+    background: #222529 !important;
     padding: 13px 13px;
 }
 .theme-dark .channel-textarea-inner .channel-textarea-upload {
@@ -459,4 +459,46 @@ code.inline, .theme-dark .message-group .comment .markup pre code {
 
 .protip.inline label {
 	color: #C1D1DC;
+}
+
+.option-popout.small-popout-box .btn-item:hover {
+	color: #E5E5E5;
+}
+
+.context-menu, .context-menu .item, .option-popout.small-popout-box {
+	background-color: #222529 !important;
+	border: none;
+}
+
+.context-menu .item:hover {
+	background-color: #1E2124 !important;
+}
+
+#voice-connection-popout header {
+	background-color: #202226;
+}
+
+#voice-connection-popout section {
+	background-color: #26282C;
+}
+
+#voice-connection-popout hr {
+	border: none;
+}
+
+#voice-connection-popout a {
+	color: #E5E5E5 !important;
+}
+
+.sparkline svg line {
+	stroke: #E5E5E5 !important;
+}
+
+.sparkline svg g:first-child {
+	fill: var(--main-color) !important;
+	stroke: none !important;
+}
+
+.sparkline svg g polyline {
+	stroke: var(--main-color) !important;
 }
