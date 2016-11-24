@@ -540,8 +540,8 @@ code.inline, .theme-dark .message-group .comment .markup pre code {
 }
 
 :root { 
- --main-color: #FF7A23;
- --button-color: #FF7B00;
- --hover-color: #FF8739;
- --version-content: "ULTRA GUIDES";
+ --main-color: #FF7A23 !important;
+ --button-color: #FF7B00 !important;
+ --hover-color: #FF8739 !important;
+ --version-content: "ULTRA GUIDES" !important;
  }
