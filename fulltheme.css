@@ -268,16 +268,12 @@ button.btn:hover {
 .guilds-wrapper .guilds .guild.selected:before {
     background: var(--main-color) !important;
 }
-.guilds-wrapper .guilds .guild.unread:before {
+.guilds-wrapper .guilds .guild.unread:before, .guild-channels .channel-text.unread:not(.selected):not(.channel-muted):before {
     background: var(--main-color);
-    opacity: .5;
+    opacity: .7;
 }
 .guild-channels .channel-text.selected:before {
     border-left: 3px solid var(--main-color);
-}
-.guild-channels .channel-text.unread:not(.selected):not(.channel-muted):before {
-    background: var(--main-color);
-    opacity: .5;
 }
 
 .guild-channels .channel-text:hover.channel-muted:before, .guild-channels .channel-text:hover:not(.unread):before {
@@ -324,15 +320,19 @@ textarea {
 	background-color: #1E2124 !important;
 }
 
-.title-wrap, .guild-header header, .search-bar, .friends-header {
+.title-wrap, .guild-header header, .search-bar, .friends-header, #friends div.friends-header {
     background-color: #26282C !important;
     border-bottom: 1px solid #19191B !important;
     box-shadow: none !important;
-    min-height: 57px !important;
-    max-height: 57px !important;
-    webkit-border-radius: 0px !important;
+    min-height: 57px;
+    max-height: 57px;
     border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+}
 
+.search-bar, .friends-header {
+	min-height: 56px !important;
+	max-height: 56px !important;
 }
 
 a[draggable="false"], a[href*="/channels/@me"], a.channel-name.channel-private, a.voice-connection-channel {
@@ -343,7 +343,7 @@ a, .divider.divider-red span {
     color: var(--main-color) !important;
 }
 
-.divider.divider-red span {
+.divider.divider-red span, .theme-dark .messages-wrapper .messages .divider span {
 	background-color: #2C2E33 !important;
 }
 
@@ -351,8 +351,20 @@ a, .divider.divider-red span {
     background: var(--main-color) !important;
 }
 
-.tooltip:after {
+.tooltip.tooltip-right:after {
 	border-right-color: var(--main-color) !important;
+}
+
+.tooltip.tooltip-bottom:after {
+	border-bottom-color: var(--main-color) !important;
+}
+
+.tooltip.tooltip-top:after {
+	border-top-color: var(--main-color) !important;
+}
+
+.tooltip.tooltip-left:after {
+	border-left-color: var(--main-color) !important;
 }
 
 .header-toolbar .toolbar-badge {
@@ -403,8 +415,48 @@ a, .divider.divider-red span {
     opacity: 1;
 }
 
-/*
-.inline {
+code.inline, .theme-dark .message-group .comment .markup pre code {
 	background: #1E2124 !important;
 }
-*/
+
+.theme-dark .message-group .comment .markup pre {
+	border-color: #1E2124;
+}
+
+.guild-channels .channel-voice-states li .icon {
+	opacity: .3 !important;
+}
+
+.user-popout header.header {
+	background: url(https://httpsimage.com/img/up_newest.png) #1E2124;
+	background-size: cover;
+}
+
+.user-popout .body, .user-popout .footer {
+	background: #1E2124;
+}
+
+.member-roles .member-role {
+	color: #171719;
+	background-color: rgba(23, 23, 25, 0.0980392); 
+	border: 1px solid rgba(23, 23, 25, 0.70);
+}
+
+.member-roles .member-role {
+	color: #e4e4e4;
+	opacity: .85;
+}
+
+.user-popout .footer {
+	border-top: 1px solid #191C1F;
+}
+
+.user-popout .footer .quick-message-wrapper .quick-message {
+	border: 1px solid #191C1F;
+	background-color: #191C1F;
+	color: #E5E5E5;
+}
+
+.protip.inline label {
+	color: #C1D1DC;
+}
