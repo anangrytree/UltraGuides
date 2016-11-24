@@ -1,10 +1,3 @@
-:root { 
- --main-color: #FF7A23;
- --button-color: #FF7B00;
- --hover-color: #6f182a;
- --version-content: "ULTRA GUIDES";
- }
-
 .account:after {
     content: var(--version-content); 
     color: rgba(255,255,255,0.2); 
@@ -89,8 +82,8 @@
 }
 
 :root { 
- --main-color: #FF7A23;
- --button-color: #FF7B00;
- --hover-color: #FF8739;
- --version-content: "ULTRA GUIDES";
+ --main-color: #FF7A23 !important;
+ --button-color: #FF7B00 !important;
+ --hover-color: #FF8739 !important;
+ --version-content: "ULTRA GUIDES" !important;
  }
