@@ -502,3 +502,46 @@ code.inline, .theme-dark .message-group .comment .markup pre code {
 .sparkline svg g polyline {
 	stroke: var(--main-color) !important;
 }
+
+#user-profile-modal {
+	background: url(https://httpsimage.com/img/up_header.png);
+	background-size: contain;
+}
+
+#user-profile-modal header, #user-profile-modal header:after, #user-profile-modal .tab-bar-container, #user-profile-modal .avatar-wrapper {
+	background-color: transparent !important;
+	background-image: none !important;
+}
+
+#user-profile-modal .tab-bar-container .tab-bar .tab-bar-item.selected, #user-profile-modal .header .header-info .header-info-inner .discord-tag span {
+	color: #E5E5E5 !important;
+	opacity: .75 !important;
+}
+
+#user-profile-modal .tab-bar-container {
+	border-bottom: 1px solid #191C1F;
+}
+
+#user-profile-modal .tab-bar-container .tab-bar .tab-bar-item, #user-profile-modal .header .header-info .header-info-inner .discord-tag span.discriminator {
+	color: #E5E5E5 !important;
+	opacity: .50 !important;
+}
+
+.btn.add-friend {
+	background-color: var(--main-color) !important;
+}
+
+.btn.add-friend:hover {
+	background-color: var(--hover-color) !important;
+}
+
+.scroller-wrap.fade .scroller.guilds {
+	background-color: #1E2124 !important;
+}
+
+:root { 
+ --main-color: #FF7A23;
+ --button-color: #FF7B00;
+ --hover-color: #FF8739;
+ --version-content: "ULTRA GUIDES";
+ }
